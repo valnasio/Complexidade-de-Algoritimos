@@ -50,9 +50,13 @@ const roadmapLivros = [
     new Livro("Duna", "Frank Herbert", 39),
     new Livro("O Alquimista", "Paulo Coelho", 40),
 ];
-
+// Função para buscar um livro no roadmapLivros com base no ID.
+// Utiliza o método find para procurar um livro cujo atributo id seja igual ao valor fornecido.
+// Retorna o livro encontrado ou null se nenhum livro corresponder ao ID.
 function buscarLivroPorId(id) {
+    // Utiliza o método find para procurar um livro no array roadmapLivros com base no ID fornecido.
     const livroEncontrado = roadmapLivros.find(livro => livro.id === id);
+    // Se um livro foi encontrado, retorna o livro; caso contrário, retorna null.
     return livroEncontrado ? livroEncontrado : null;
 }
 
